@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gold Glover - VIP Exclusivo</title>
+<title>Gold Glover - Casino VIP Exclusivo</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
 <!-- Meta Pixel Code -->
@@ -25,247 +25,189 @@ src="https://www.facebook.com/tr?id=1272862227376236&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
 
 <style>
-* {margin:0; padding:0; box-sizing:border-box;}
-body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
-    min-height:100vh; color:white; overflow-x:hidden;
-}
-.container {max-width:100%; margin:0 auto; padding:15px; position:relative;}
-.floating-particles {position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:1;}
-.particle {position:absolute; width:4px; height:4px; background: linear-gradient(45deg, #ffd700, #ffed4e); border-radius:50%; animation: float 6s ease-in-out infinite; opacity:0.7;}
-@keyframes float {0%,100%{transform:translateY(0px) rotate(0deg);}50%{transform:translateY(-20px) rotate(180deg);}}
-
-.urgent-banner {
-    background: linear-gradient(90deg, #ff4757, #ff3742);
-    text-align: center;
-    padding: 15px 10px;
-    margin: 0 -15px 20px -15px;
-    font-weight: 800;
-    font-size: 14px;
-    letter-spacing: 1px;
-    animation: pulse 2s infinite;
-    box-shadow: 0 4px 20px rgba(255, 71, 87, 0.4);
-}
-@keyframes pulse {0%{transform:scale(1);}50%{transform:scale(1.02);}100%{transform:scale(1);}}
-
-.main-content {position: relative; z-index:10; padding-bottom:80px;}
-
-.logo-section{text-align:center; margin-bottom:30px;}
-.logo {
-    background: linear-gradient(45deg, #ffd700, #ffed4e);
-    -webkit-background-clip:text; -webkit-text-fill-color:transparent;
-    font-size:48px; font-weight:900; text-shadow:0 0 30px rgba(255,215,0,0.5);
-    letter-spacing:3px; margin-bottom:10px;
-}
-.tagline{font-size:16px; color:#ffd700; font-weight:600; letter-spacing:1px;}
-
-.mega-bonus {
-    background: linear-gradient(135deg, #ff6b6b, #ee5a24, #ff9ff3, #f368e0);
-    background-size:300% 300%; animation:gradientShift 3s ease infinite;
-    padding:25px; border-radius:20px; text-align:center; margin-bottom:25px;
-    box-shadow:0 15px 35px rgba(255,107,107,0.4); border:3px solid #ffd700;
-}
-@keyframes gradientShift {0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
-.bonus-text{font-size:14px; font-weight:600; margin-bottom:10px; opacity:0.9;}
-.bonus-percentage{font-size:42px; font-weight:900; text-shadow:0 0 20px rgba(255,255,255,0.8); margin-bottom:5px; letter-spacing:2px;}
-.bonus-subtitle{font-size:16px; font-weight:700; text-transform:uppercase; letter-spacing:1px;}
-
-.cta-button {
-    color:white; padding:25px 20px; border-radius:20px; text-align:center;
-    font-weight:900; font-size:22px; text-decoration:none; display:block;
-    margin:25px 0; box-shadow:0 15px 40px rgba(0,255,136,0.5);
-    transition:all 0.3s ease; position:relative; overflow:hidden;
-    text-transform:uppercase; letter-spacing:1px; border:3px solid #ffd700;
-    animation:buttonPulse 2s infinite; background:linear-gradient(135deg,#ff4757,#ff3742);
-}
-.cta-button::before {content:'📱 WhatsApp'; position:absolute; left:20px; top:50%; transform:translateY(-50%); font-size:18px; font-weight:700;}
-.cta-button:hover{transform:translateY(-3px); box-shadow:0 15px 40px rgba(0,255,136,0.6);}
-@keyframes buttonPulse {0%{transform:scale(1); box-shadow:0 15px 40px rgba(0,255,136,0.5);}50%{transform:scale(1.02); box-shadow:0 20px 50px rgba(0,255,136,0.7);}100%{transform:scale(1); box-shadow:0 15px 40px rgba(0,255,136,0.5);}}
-
-.verification-badge {
-    background: linear-gradient(135deg, #00ff88, #00d4aa);
-    color:white; padding:15px 25px; border-radius:50px; text-align:center;
-    font-weight:800; font-size:20px; margin-bottom:25px; box-shadow:0 8px 25px rgba(0,255,136,0.3);
-    position:relative; overflow:hidden;
-}
-.verification-badge::before {content:'✓ ✓'; position:absolute; left:15px; top:50%; transform:translateY(-50%); font-size:24px;}
-.verification-badge::after {content:'✓ ✓'; position:absolute; right:15px; top:50%; transform:translateY(-50%); font-size:24px;}
-
-.minimum-deposit {
-    text-align:center; font-size:18px; font-weight:700; color:#ffd700;
-    margin-bottom:25px; padding:15px; background:rgba(255,215,0,0.1); border-radius:10px;
-    border:1px solid rgba(255,215,0,0.3);
-}
-
-.social-proof {
-    background:linear-gradient(135deg,#00ff88,#00d4aa); color:white; padding:20px; border-radius:15px;
-    text-align:center; font-weight:800; font-size:18px; margin-bottom:25px; box-shadow:0 8px 25px rgba(0,255,136,0.3); position:relative;
-}
-.social-proof::before {content:'👥'; position:absolute; left:20px; top:50%; transform:translateY(-50%); font-size:24px;}
-
-.testimonials {display:flex; gap:15px; margin-bottom:25px;}
-.testimonial {flex:1; background:rgba(255,255,255,0.1); backdrop-filter:blur(10px); padding:15px; border-radius:15px; border:1px solid rgba(255,215,0,0.3); text-align:center;}
-.testimonial-text {font-style:italic; margin-bottom:10px; font-size:14px;}
-.testimonial-stars {color:#ffd700; font-size:18px; margin-bottom:5px;}
-.testimonial-author {font-weight:600; color:#ffd700; font-size:12px;}
-
-.footer-cta {
-    background: linear-gradient(90deg, #00ff88, #00d4aa); color:white; padding:20px; text-align:center;
-    margin:30px -15px 0 -15px; font-weight:900; font-size:18px; position:fixed; bottom:0; left:0; right:0; z-index:1000;
-    box-shadow:0 -8px 25px rgba(0,255,136,0.5); border-top:3px solid #ffd700; cursor:pointer;
-    animation:footerPulse 3s infinite;
-}
-@keyframes footerPulse {0%{background:linear-gradient(90deg,#00ff88,#00d4aa);}50%{background:linear-gradient(90deg,#ff4757,#ff3742);}100%{background:linear-gradient(90deg,#00ff88,#00d4aa);}}
-
-.countdown {display:flex; justify-content:center; gap:15px; margin:20px 0;}
-.countdown-item {background:rgba(0,0,0,0.7); padding:10px 15px; border-radius:10px; text-align:center; min-width:60px;}
-.countdown-number {font-size:24px; font-weight:900; color:#ff4757;}
-.countdown-label {font-size:10px; color:#ccc; font-weight:600;}
-
-@media(max-width:480px){
-    .container{padding:10px;}
-    .logo{font-size:36px;}
-    .bonus-percentage{font-size:36px;}
-    .cta-button{font-size:20px; padding:25px 15px; margin:20px 0;}
-    .cta-button::before{font-size:16px; left:15px;}
-    .footer-cta{font-size:16px; padding:15px 10px;}
-    .urgent-banner{font-size:12px; padding:10px;}
-    .testimonials{flex-direction:column; gap:10px;}
-    .countdown{gap:10px;}
-    .countdown-item{padding:8px 12px; min-width:50px;}
-    .countdown-number{font-size:20px;}
-    .winner-avatar{width:35px; height:35px; font-size:14px;}
-    .winner-name{font-size:14px;}
-    .winner-amount{font-size:16px;}
-}
-.winners-ticker {
-    background: rgba(0,0,0,0.6); border:2px solid #ffd700; border-radius:15px; padding:15px; margin-bottom:25px;
-    backdrop-filter:blur(10px); position:relative; overflow:hidden;
-}
-.winners-ticker::before {content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%;
-background:linear-gradient(45deg, transparent, rgba(255,215,0,0.1), transparent); animation:shine 3s linear infinite;}
-@keyframes shine {0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
-.winner-item{display:flex; align-items:center; margin-bottom:10px; position:relative; z-index:2;}
-.winner-avatar{width:40px; height:40px; background:linear-gradient(45deg,#ffd700,#ffed4e); border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; color:#000; margin-right:12px; font-size:16px;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Poppins',sans-serif;background:linear-gradient(135deg,#0a0a0a 0%,#1a1a2e 50%,#16213e 100%);min-height:100vh;color:white;overflow-x:hidden;}
+.container{max-width:100%;margin:0 auto;padding:15px;position:relative;}
+.floating-particles{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:1;}
+.particle{position:absolute;width:4px;height:4px;background:linear-gradient(45deg,#ffd700,#ffed4e);border-radius:50%;animation:float 6s ease-in-out infinite;opacity:0.7;}
+@keyframes float{0%,100%{transform:translateY(0px) rotate(0deg);}50%{transform:translateY(-20px) rotate(180deg);}}
+.urgent-banner{background:linear-gradient(90deg,#ff4757,#ff3742);text-align:center;padding:12px;font-weight:800;font-size:14px;letter-spacing:1px;animation:pulse 2s infinite;box-shadow:0 4px 20px rgba(255,71,87,0.4);}
+@keyframes pulse{0%{transform:scale(1);}50%{transform:scale(1.02);}100%{transform:scale(1);}}
+.main-content{position:relative;z-index:10;padding-bottom:80px;}
+.logo-section{text-align:center;margin-bottom:30px;}
+.logo{background:linear-gradient(45deg,#ffd700,#ffed4e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-size:48px;font-weight:900;text-shadow:0 0 30px rgba(255,215,0,0.5);letter-spacing:3px;margin-bottom:10px;}
+.tagline{font-size:16px;color:#ffd700;font-weight:600;letter-spacing:1px;}
+.verification-badge{background:linear-gradient(135deg,#00ff88,#00d4aa);color:white;padding:15px 25px;border-radius:50px;text-align:center;font-weight:800;font-size:20px;margin-bottom:25px;box-shadow:0 8px 25px rgba(0,255,136,0.3);position:relative;overflow:hidden;}
+.verification-badge::before{content:'✓ ✓';position:absolute;left:15px;top:50%;transform:translateY(-50%);font-size:24px;}
+.verification-badge::after{content:'✓ ✓';position:absolute;right:15px;top:50%;transform:translateY(-50%);font-size:24px;}
+.mega-bonus{background:linear-gradient(135deg,#ff6b6b,#ee5a24,#ff9ff3,#f368e0);background-size:300% 300%;animation:gradientShift 3s ease infinite;padding:25px;border-radius:20px;text-align:center;margin-bottom:25px;box-shadow:0 15px 35px rgba(255,107,107,0.4);border:3px solid #ffd700;}
+@keyframes gradientShift{0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
+.bonus-text{font-size:14px;font-weight:600;margin-bottom:10px;opacity:0.9;}
+.bonus-percentage{font-size:42px;font-weight:900;text-shadow:0 0 20px rgba(255,255,255,0.8);margin-bottom:5px;letter-spacing:2px;}
+.bonus-subtitle{font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:1px;}
+.cta-button{background:linear-gradient(135deg,#ff4757,#ff3742);color:white;padding:25px 20px;border-radius:20px;text-align:center;font-weight:900;font-size:22px;text-decoration:none;display:block;margin:25px 0;box-shadow:0 15px 40px rgba(255,71,87,0.5);transition:all 0.3s ease;position:relative;overflow:hidden;text-transform:uppercase;letter-spacing:1px;border:3px solid #ffd700;animation:buttonPulse 2s infinite;}
+@keyframes buttonPulse{0%{transform:scale(1);box-shadow:0 15px 40px rgba(255,71,87,0.5);}50%{transform:scale(1.02);box-shadow:0 20px 50px rgba(255,71,87,0.7);}100%{transform:scale(1);box-shadow:0 15px 40px rgba(255,71,87,0.5);}}
+.cta-button:hover{transform:translateY(-3px);box-shadow:0 15px 40px rgba(255,71,87,0.6);}
+.minimum-deposit{text-align:center;font-size:18px;font-weight:700;color:#ffd700;margin-bottom:25px;padding:15px;background:rgba(255,215,0,0.1);border-radius:10px;border:1px solid rgba(255,215,0,0.3);}
+.social-proof{background:linear-gradient(135deg,#00ff88,#00d4aa);color:white;padding:20px;border-radius:15px;text-align:center;font-weight:800;font-size:18px;margin-bottom:25px;box-shadow:0 8px 25px rgba(0,255,136,0.3);position:relative;}
+.social-proof::before{content:'👥';position:absolute;left:20px;top:50%;transform:translateY(-50%);font-size:24px;}
+.testimonials{display:flex;gap:15px;margin-bottom:25px;}
+.testimonial{flex:1;background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);padding:15px;border-radius:15px;border:1px solid rgba(255,215,0,0.3);text-align:center;}
+.testimonial-text{font-style:italic;margin-bottom:10px;font-size:14px;}
+.testimonial-stars{color:#ffd700;font-size:18px;margin-bottom:5px;}
+.testimonial-author{font-weight:600;color:#ffd700;font-size:12px;}
+.footer-cta{background:linear-gradient(90deg,#ff4757,#ff3742);color:white;padding:20px;text-align:center;margin:30px -15px 0 -15px;font-weight:900;font-size:18px;position:fixed;bottom:0;left:0;right:0;z-index:1000;box-shadow:0 -8px 25px rgba(255,71,87,0.5);border-top:3px solid #ffd700;cursor:pointer;animation:footerPulse 3s infinite;}
+@keyframes footerPulse{0%{background:linear-gradient(90deg,#ff4757,#ff3742);}50%{background:linear-gradient(90deg,#00ff88,#00d4aa);}100%{background:linear-gradient(90deg,#ff4757,#ff3742);}}
+.countdown{display:flex;justify-content:center;gap:15px;margin:20px 0;}
+.countdown-item{background:rgba(0,0,0,0.7);padding:10px 15px;border-radius:10px;text-align:center;min-width:60px;}
+.countdown-number{font-size:24px;font-weight:900;color:#ff4757;}
+.countdown-label{font-size:10px;color:#ccc;font-weight:600;}
+.winners-ticker{background:rgba(0,0,0,0.6);border:2px solid #ffd700;border-radius:15px;padding:15px;margin-bottom:25px;backdrop-filter:blur(10px);position:relative;overflow:hidden;}
+.winners-ticker::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:linear-gradient(45deg,transparent,rgba(255,215,0,0.1),transparent);animation:shine 3s linear infinite;}
+@keyframes shine{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+.winner-item{display:flex;align-items:center;margin-bottom:10px;position:relative;z-index:2;}
+.winner-avatar{width:40px;height:40px;background:linear-gradient(45deg,#ffd700,#ffed4e);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;color:#000;margin-right:12px;font-size:16px;}
 .winner-info{flex:1;}
-.winner-name{font-weight:700; color:#ffd700; font-size:16px;}
-.winner-amount{font-weight:900; color:#00ff88; font-size:18px; text-shadow:0 0 10px rgba(0,255,136,0.5);}
-.winner-location{color:#ccc; font-size:12px;}
+.winner-name{font-weight:700;color:#ffd700;font-size:16px;}
+.winner-amount{font-weight:900;color:#00ff88;font-size:18px;text-shadow:0 0 10px rgba(0,255,136,0.5);}
+.winner-location{color:#ccc;font-size:12px;}
+@media(max-width:480px){.container{padding:10px;}.logo{font-size:36px;}.bonus-percentage{font-size:36px;}.cta-button{font-size:20px;padding:25px 15px;margin:20px 0;}.footer-cta{font-size:16px;padding:15px 10px;}.urgent-banner{font-size:12px;padding:10px;}.testimonials{flex-direction:column;gap:10px;}.countdown{gap:10px;}.countdown-item{padding:8px 12px;min-width:50px;}.countdown-number{font-size:20px;}.winners-ticker{padding:12px;}.winner-avatar{width:35px;height:35px;font-size:14px;}.winner-name{font-size:14px;}.winner-amount{font-size:16px;}}
 </style>
 </head>
 <body>
-
 <div class="floating-particles">
-    <div class="particle" style="left:10%; animation-delay:0s;"></div>
-    <div class="particle" style="left:20%; animation-delay:1s;"></div>
-    <div class="particle" style="left:30%; animation-delay:2s;"></div>
-    <div class="particle" style="left:40%; animation-delay:0.5s;"></div>
-    <div class="particle" style="left:50%; animation-delay:1.5s;"></div>
-    <div class="particle" style="left:60%; animation-delay:3s;"></div>
-    <div class="particle" style="left:70%; animation-delay:0.8s;"></div>
-    <div class="particle" style="left:80%; animation-delay:2.3s;"></div>
-    <div class="particle" style="left:90%; animation-delay:1.2s;"></div>
+<div class="particle" style="left:10%;animation-delay:0s;"></div>
+<div class="particle" style="left:20%;animation-delay:1s;"></div>
+<div class="particle" style="left:30%;animation-delay:2s;"></div>
+<div class="particle" style="left:40%;animation-delay:0.5s;"></div>
+<div class="particle" style="left:50%;animation-delay:1.5s;"></div>
+<div class="particle" style="left:60%;animation-delay:3s;"></div>
+<div class="particle" style="left:70%;animation-delay:0.8s;"></div>
+<div class="particle" style="left:80%;animation-delay:2.3s;"></div>
+<div class="particle" style="left:90%;animation-delay:1.2s;"></div>
 </div>
 
-<div class="urgent-banner">🔥 ¡ÚLTIMO DÍA! OFERTA EXPIRA EN 24 HORAS 🔥</div>
+<div class="urgent-banner">
+🔥 ¡ÚLTIMO DÍA! OFERTA EXPIRA EN 24 HORAS 🔥
+</div>
 
 <div class="container">
-    <div class="main-content">
-        <!-- Logo Section -->
-        <div class="logo-section">
-            <div class="logo">GOLD GLOVER</div>
-            <div class="tagline">CASINO VIP EXCLUSIVO</div>
-        </div>
+<div class="main-content">
+<div class="logo-section">
+<div class="logo">GOLD GLOVER</div>
+<div class="tagline">CASINO VIP EXCLUSIVO</div>
+</div>
 
-        <!-- Main CTA Button -->
-        <a href="https://wa.me/5491125459137?text=¡Quiero%20mi%20SUPER%20BONO%20del%2050%25!" 
-           class="cta-button whatsapp-cta" 
-           data-event="WhatsApp Click" 
-           data-position="main-cta">
-           🚀 OBTENER MI BONO AHORA 🚀
-        </a>
+<a href="https://wa.me/5491123456789?text=¡Quiero%20mi%20SUPER%20BONO%20del%2050%25!" class="cta-button whatsapp-cta" data-event="WhatsApp Click" data-position="main-cta">
+📱 WhatsApp - OBTENER MI BONO AHORA
+</a>
 
-        <!-- Winners Ticker (debajo del botón) -->
-        <div class="winners-ticker">
-            <div class="winner-item">
-                <div class="winner-avatar">JC</div>
-                <div class="winner-info">
-                    <div class="winner-name">Juan Carlos M.</div>
-                    <div class="winner-amount">$247,580</div>
-                    <div class="winner-location">📍 Buenos Aires - Hace 3 min</div>
-                </div>
-            </div>
-            <div class="winner-item">
-                <div class="winner-avatar">MR</div>
-                <div class="winner-info">
-                    <div class="winner-name">María R.</div>
-                    <div class="winner-amount">$156,340</div>
-                    <div class="winner-location">📍 Córdoba - Hace 8 min</div>
-                </div>
-            </div>
-            <div class="winner-item">
-                <div class="winner-avatar">AS</div>
-                <div class="winner-info">
-                    <div class="winner-name">Alejandro S.</div>
-                    <div class="winner-amount">$89,720</div>
-                    <div class="winner-location">📍 Rosario - Hace 12 min</div>
-                </div>
-            </div>
-        </div>
+<!-- Winners debajo del botón -->
+<div class="winners-ticker">
+<div class="winner-item">
+<div class="winner-avatar">JC</div>
+<div class="winner-info">
+<div class="winner-name">Juan Carlos M.</div>
+<div class="winner-amount">$247,580</div>
+<div class="winner-location">📍 Buenos Aires - Hace 3 min</div>
+</div>
+</div>
+<div class="winner-item">
+<div class="winner-avatar">MR</div>
+<div class="winner-info">
+<div class="winner-name">María R.</div>
+<div class="winner-amount">$156,340</div>
+<div class="winner-location">📍 Córdoba - Hace 8 min</div>
+</div>
+</div>
+<div class="winner-item">
+<div class="winner-avatar">AS</div>
+<div class="winner-info">
+<div class="winner-name">Alejandro S.</div>
+<div class="winner-amount">$89,720</div>
+<div class="winner-location">📍 Rosario - Hace 12 min</div>
+</div>
+</div>
+</div>
 
-        <!-- Mega Bonus -->
-        <div class="mega-bonus">
-            <div class="bonus-text">🎁 SUPER BONO EXCLUSIVO 🎁</div>
-            <div class="bonus-percentage">50%</div>
-            <div class="bonus-subtitle">BONIFICADO EN TU PRIMER DEPÓSITO</div>
-        </div>
+<div class="mega-bonus">
+<div class="bonus-text">🎁 SUPER BONO EXCLUSIVO 🎁</div>
+<div class="bonus-percentage">50%</div>
+<div class="bonus-subtitle">BONIFICADO EN TU PRIMER DEPÓSITO</div>
+</div>
 
-        <!-- Second CTA Button -->
-        <a href="https://wa.me/5491125459137?text=¡Quiero%20mi%20SUPER%20BONO%20del%2050%25!" 
-           class="cta-button whatsapp-cta" 
-           style="background: linear-gradient(135deg, #ff4757, #ff3742); animation-delay:1s;" 
-           data-event="WhatsApp Click" data-position="secondary-cta">
-           💬 HABLAR POR WHATSAPP YA
-        </a>
+<a href="https://wa.me/5491125459137?text=¡Quiero%20mi%20SUPER%20BONO%20del%2050%25!" class="cta-button whatsapp-cta" data-event="WhatsApp Click" data-position="secondary-cta">
+📱 WhatsApp - HABLAR YA
+</a>
 
-        <!-- Countdown Timer -->
-        <div class="countdown">
-            <div class="countdown-item">
-                <div class="countdown-number" id="hours">23</div>
-                <div class="countdown-label">HORAS</div>
-            </div>
-            <div class="countdown-item">
-                <div class="countdown-number" id="minutes">45</div>
-                <div class="countdown-label">MIN</div>
-            </div>
-            <div class="countdown-item">
-                <div class="countdown-number" id="seconds">12</div>
-                <div class="countdown-label">SEG</div>
-            </div>
-        </div>
+<div class="countdown">
+<div class="countdown-item">
+<div class="countdown-number" id="hours">23</div>
+<div class="countdown-label">HORAS</div>
+</div>
+<div class="countdown-item">
+<div class="countdown-number" id="minutes">45</div>
+<div class="countdown-label">MIN</div>
+</div>
+<div class="countdown-item">
+<div class="countdown-number" id="seconds">12</div>
+<div class="countdown-label">SEG</div>
+</div>
+</div>
 
-        <!-- Verification Badge -->
-        <div class="verification-badge">PLATAFORMA VERIFICADA</div>
+<div class="verification-badge">PLATAFORMA VERIFICADA</div>
+<div class="minimum-deposit">💰 Mínimo de Carga: $500</div>
+<div class="social-proof">MÁS DE 25.000 JUGADORES GANANDO HOY</div>
 
-        <!-- Minimum Deposit -->
-        <div class="minimum-deposit">💰 Mínimo de Carga: $1000</div>
+<div class="testimonials">
+<div class="testimonial">
+<div class="testimonial-text">"¡Increíble! Gané $85,000 en mi primera semana"</div>
+<div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+<div class="testimonial-author">- Carlos M.</div>
+</div>
+<div class="testimonial">
+<div class="testimonial-text">"La mejor plataforma que probé. Retiros súper rápidos"</div>
+<div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+<div class="testimonial-author">- Ana L.</div>
+</div>
+</div>
+</div>
+</div>
 
-        <!-- Social Proof -->
-        <div class="social-proof">MÁS DE 25.000 JUGADORES GANANDO HOY</div>
+<div class="footer-cta whatsapp-cta" data-event="WhatsApp Click" data-position="footer-cta">
+📱 ¡HABLAR POR WHATSAPP AHORA! - BONO 50% ACTIVO 🎁
+</div>
 
-        <!-- Testimonials -->
-        <div class="testimonials">
-            <div class="testimonial">
-                <div class="testimonial-text">"¡Increíble! Gané $85,000 en mi primera semana"</div>
-                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                <div class="testimonial-author">- Carlos M.</div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-text">"La mejor plataforma que probé. Retiros súper rápidos"</div>
-                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                <div class="testimonial-author">- Ana L.</div>
-            </div>
-        </div>
-    </div>
-</
+<script>
+// Meta Pixel Event Tracking Function
+function trackWhatsAppClick(position){
+if(typeof fbq!=='undefined'){
+fbq('track','Contact',{content_name:'WhatsApp Contact',content_category:'Landing',value:1.00,currency:'USD',custom_position:position});
+fbq('trackCustom','WhatsAppClick',{button_position:position,page_type:'casino_landing',offer_type:'50_percent_bonus',timestamp:new Date().toISOString()});
+console.log('Meta Pixel: WhatsApp click tracked for position:',position);}
+else{console.log('Meta Pixel not loaded');}}
+document.addEventListener('DOMContentLoaded',function(){
+const whatsappButtons=document.querySelectorAll('.whatsapp-cta');
+whatsappButtons.forEach(button=>{
+button.addEventListener('click',function(e){
+const position=this.getAttribute('data-position')||'unknown';
+trackWhatsAppClick(position);
+if(this.tagName==='A'){return true;}
+else{window.open('https://wa.me/5491125459137?text=¡Quiero%20mi%20SUPER%20BONO%20del%2050%25!','_blank');}});});
+
+// Countdown Timer
+function updateCountdown(){
+const hours=document.getElementById('hours');
+const minutes=document.getElementById('minutes');
+const seconds=document.getElementById('seconds');
+let h=parseInt(hours.textContent);
+let m=parseInt(minutes.textContent);
+let s=parseInt(seconds.textContent);
+if(s>0){s--;}else{s=59;if(m>0){m--;}else{m=59;if(h>0){h--;}else{h=23;m=59;s=59;}}}
+hours.textContent=h.toString().padStart(2,'0');
+minutes.textContent=m.toString().padStart(2,'0');
+seconds.textContent=s.toString().padStart(2,'0');}
+setInterval(updateCountdown,1000);
+
+// Dynamic winners update
+const winners=[{name:"Diego P.",amount:"$198,450",location:"La Plata"},{name:"Sofía M.",amount:"$134,670",location
